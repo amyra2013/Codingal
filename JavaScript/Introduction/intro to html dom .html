@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction to HTML DOM</title>
+        <style>
+            #idDIV1 {
+                color:salmon;
+                border: 5px solid;
+                text-align:center;
+                font-size: x-large;
+            }
+            
+        </style>
+    </head>
+    <body>
+       <header>
+        <h1 id="heading1" style="color:sandybrown">
+        Hello!
+        </h1>
+        <p id="paragraph01">
+        Welcome!
+        </p>
+       </header>
+       <p id="paragraph02">
+        <i>I am learning HTML.</i>
+       </p>
+       <script>
+        let div1=document.createElement('div');
+       div1.id="idDIV1" ;
+       div1.className="classDIV1";
+       div1.innerHTML="<p>Congrats! You've created a div.</p>";
+       document.body.append(div1);
+
+       let heading=document.getElementById("heading1");
+       heading.innerHTML="Introduction to HTML DOM";
+
+       document.querySelector('header p').innerHTML="Hello!";      
+       </script>
+    </body>
+</html>
