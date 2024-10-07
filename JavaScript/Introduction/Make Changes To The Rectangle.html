@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+        Dynamic CSS Changes
+      </title>
+      <style>
+        .rectangle {
+             
+            height:300px;
+            width:300px;
+            border:2px solid black;
+            margin:auto;
+        }
+
+        #Button1 {
+
+            width: 100px;
+            padding:20px;
+            margin:auto;
+            align-items:center;
+        }
+      </style>
+      <body>
+        <h3 style="text-align:center;">
+            Make Changes To The Rectangle
+        </h3>
+        <div class="rectangle">
+        </div>
+        <div class="buttons">
+            <button onclick="turnIntoCircle()" id="Button1">Turn me into a circle! </button>
+            <button onclick="hide()">Hide</button>
+            <button onclick="show()">Show</button>
+            <button onclick="turnBackIntoRectangle()">Turn the circle back into a rectangle!</button>
+        </div>
+
+        <script>
+            let div=document.querySelector('.rectangle');
+            function turnIntoCircle() {
+                div.style.borderRadius='50%';
+            }
+            function hide()   {
+                div.style.display='none';
+            } 
+
+            function show() {
+                div.style.display='block';
+            }
+
+            function turnbackIntoRectangle() {
+                div.style.borderRadius='0px';
+            }
+
+            div.onmouseenter= function () {
+                div.style.background='purple';
+            }
+
+            div.onmouseout= function () {
+                div.style.background='none';
+            }
+        </script
+      </body>
+    </head>
+</html>
