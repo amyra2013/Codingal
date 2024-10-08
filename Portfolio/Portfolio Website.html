@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Website</title>
+        <style>
+            body {
+                text-align:center;
+            }
+
+            nav {
+                background-color:white;
+                padding:10px;
+            }
+
+            ul {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                overflow:hidden;
+            }
+
+            li a{
+               display:block; 
+            }
+            li a:hover {
+            background-color: red;  
+            }
+
+
+        </style>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Portfolio Website.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <h2>
+        Interesting Information
+    </h2>
+
+    <img src="tiger.jpeg" alt="Tiger"> 
+    <button onclick="Tiger()">Read More</button>
+    <p id="Tiger"></p> <br>
+    <img src="lion.jpeg" alt="Lion">
+    <button onclick="Lion()">Read More</button>
+    <p id="Lion"></p>
+
+    <script>
+        function Tiger() {
+            document.getElementById("Tiger").innerHTML=" The tiger (Panthera tigris) is the largest extant cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside. It is an apex predator, primarily preying on ungulates such as deer and wild boar.";
+       
+        }
+
+        function Lion() {
+            document.getElementById("Lion").innerHTML="The lion (Panthera leo) is a species in the family Felidae and a member of the genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail.";
+        }
+    </script>
+</body>
+
+</html>
