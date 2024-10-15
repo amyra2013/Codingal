@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Slider in Website
+        </title>
+    </head>
+
+    <body>
+        <section>
+            <img src="picture 01.png" class="myImages">
+            <img src="picture 02.png" class="myImages">
+        </section>
+
+        <script>
+            var i;
+            var index=0;
+            carousel();
+            function carousel() {
+                var x=document.getElementsByClassName("myImages");
+                for (i=0; i<x.length; i++ )  {
+                    x[i].style.display="none";
+                }  
+                index++;
+                if (index > x.length)  {
+                    index=1;
+                }
+                
+                x[index-1].style.display="block";
+                setTimeout(carousel, 3000);
+                
+            }        
+
+            
+
+        </script>
+    </body>
+</html>
