@@ -1,0 +1,40 @@
+.DIV {
+    position: relative;
+    opacity: 0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100%;
+}
+
+.trans, .border{
+    background-color:#4336df; 
+} 
+
+.div {
+    position:absolute;
+    top: 50%;
+    width:100%;
+    text-align:center;
+    color: black;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+}
+
+.section {
+    text-align:center;
+    padding:50px 80px;
+}
+
+.sec {
+    background-color: #9c6bd4;
+    color: pink;
+}
+
+.div, .border {
+    background-color:#111;
+    color:#fff;
+}
+
