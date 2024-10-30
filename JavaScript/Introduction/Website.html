@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        <style>
+            .topnav {
+                overflow:hidden;
+                background-color:rgb(195, 178, 165);
+            }
+
+            a {
+                float:left;
+                text-align:center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size:17px;
+                color:blanchedalmond;
+
+            }
+            
+            a:hover {
+                background-color:rgb(247, 226, 229);
+                color:rgb(220, 192, 197);
+            }
+
+
+            .active {
+                background-color:rgb(145, 177, 213);
+                color:rgb(208, 234, 251);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Donate</a>
+        </div>
+
+        <section>
+            <img src="puppy.png" alt="puppy" height="100%" width="200" class="myImages">
+            <img src="beagle.png" alt="cutedog" height="339" class="myImages">
+             
+        </section>
+
+        <script>
+            var index=0;
+            carousel();
+            function carousel() {
+                var i; 
+                var x= document.getElementsByClassName('myImages');
+
+                for(i=0;i<x.length;i++) {
+                    x[i].style.display="none";
+                }
+                
+                index++;
+                if(index>x.length){
+                    index=1;
+                }
+
+
+                x[index-1].style.display="block";
+                setTimeout(carousel,3000)
+            }
+        </script>
+
+
+    </body>
+</html>
