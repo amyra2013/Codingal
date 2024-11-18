@@ -1,6 +1,6 @@
 import turtle
 
-turtle.Screen().bgcolor("cyan")
+turtle.Screen().bgcolor("grey")
 star=turtle.Turtle()
 
 #first triangle for star
