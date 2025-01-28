@@ -1,4 +1,4 @@
-var ask=prompt("Welcome! Please enter the number of the shape for which you would like to calculate the perimeter. Your options are: \n1.Rectangle/Square \n2.Triangle 3.Circle \n4.Parallelogram.")
+var ask=prompt("Welcome! Please enter the number of the shape for which you would like to calculate the perimeter. Your options are: \n 1.Rectangle/Square \n 2.Triangle\n 3.Circle \n 4.Parallelogram.")
 
 if (ask==1) {
     l=prompt("Please enter the length of the rectangle.")
