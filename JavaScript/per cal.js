@@ -25,5 +25,5 @@ else if (ask==4) {
     h=prompt("Please enter the height of the parallelogram.")
     ba=prompt("Please enter the base of the parallelogram.")
     p_Result=(Number(h)+Number(ba))*2
-    alert("The area of this parallelogram is "+p_Result)
+    alert("The perimeter of this parallelogram is "+p_Result)
 }
