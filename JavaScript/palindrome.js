@@ -1,17 +1,18 @@
-var string=prompt("Please enter any word or number.")
+var string = prompt("Please enter any word or number.");
 
 function palindrome(MyString) {
-   
-    string.replace(/[^A-Z0-9]/ig,"" ).toLowerCase();
-    var revs=string.split("").reverse("").join("");
-
-    if (revs===string) {
-        document.write(string," is a palindrome.");
-    }
-
-    else {
-        document.write(string," is not a palindrome.");
+    // Remove non-alphanumeric characters and convert to lowercase
+    var cleanedString = MyString.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+    
+    // Reverse the cleaned string
+    var reversedString = cleanedString.split("").reverse().join("");
+    
+    // Check if the reversed string is the same as the original cleaned string
+    if (reversedString === cleanedString) {
+        document.write(MyString + " is a palindrome.");
+    } else {
+        document.write(MyString + " is not a palindrome.");
     }
 }
 
-palindrome(MyString)
+palindrome(string);
